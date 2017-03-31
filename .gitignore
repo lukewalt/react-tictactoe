@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 # dependencies
@@ -18,6 +19,8 @@ yarn-debug.log*
 yarn-error.log*
 
 =======
+=======
+>>>>>>> 7c63dbde423b581df4282b72eacbb2d8d5bbf2b2
 # Logs
 logs
 *.log
@@ -55,4 +58,7 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+<<<<<<< HEAD
+>>>>>>> 7c63dbde423b581df4282b72eacbb2d8d5bbf2b2
+=======
 >>>>>>> 7c63dbde423b581df4282b72eacbb2d8d5bbf2b2
