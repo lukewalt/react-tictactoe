@@ -19,7 +19,7 @@ class Game extends React.Component {
     };
   }
 
-
+ns
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
@@ -56,6 +56,7 @@ class Game extends React.Component {
     const history = this.state.history;
     const current = history[this.state.stepNumber];
     const winner = calculateWinner(current.squares);
+    const title = "TTT"
 
     const moves = history.map((step, move) => {
       const desc = move ? 'Move #' + move : 'Game Start';
@@ -65,7 +66,6 @@ class Game extends React.Component {
         </li>
       );
     });
-
     let status;
     if (winner) {
       status = 'Winner: ' + winner;
@@ -75,20 +75,20 @@ class Game extends React.Component {
 
     // appends logic to a virtual dom
     return (
+        <div className="game">
+          <div className="game-board">
+          <div className="title">Tic Tac Toe</div>
 
-      <div className="game">
-        <div className="game-board">
-          <Board
-            squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
-          />
+            <Board
+              squares={current.squares}
+              onClick={(i) => this.handleClick(i)}
+            />
+          </div>
+          <div className="game-info">
+            <div className="info-title">{status}</div>
+            <ol>{moves}</ol>
+          </div>
         </div>
-        <div className="game-info">
-          <div className="info-title">{status}</div>
-          <ol>{moves}</ol>
-        </div>
-      </div>
-
     );
   }
 }
