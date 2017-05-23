@@ -1,10 +1,14 @@
 body {
-  background: linear-gradient(#3084ff, #00ff75);
+  background: linear-gradient(#85b6ff, #0085d0);
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
   padding: 1%;
   min-height: 1000px;
   color: white;
+}
+
+#container {
+  margin-top: 5%;
 }
 
 ol, ul {
@@ -68,4 +72,13 @@ a {
 .info-title {
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 5%;
+
 }
